@@ -10,6 +10,6 @@ app
     r.res.render('list', { title: 'Список логинов', items });
   })
   .use(r => r.res.status(404).end('Soryan ya ne tut'))
-  .use((e, r, res) => res.status(500).end(`Error: ${e}`))
+  .use((e, r, res, n) => res.status(500).end(`Error: ${e}`))
   .set('view engine', 'pug')
   .listen(process.env.PORT || PORT, () => console.log(process.pid));
