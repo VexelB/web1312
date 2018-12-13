@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon"
+    "start": "node ./src/index.js"
   },
   "name": "1312",
   "version": "1.0.0",
